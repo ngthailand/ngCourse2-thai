@@ -1,4 +1,8 @@
-# Module Loading, Bundling and Build Tasks: [Webpack](http://webpack.github.io/docs/what-is-webpack.html)
+# การโหลดโมดูล, การมัดรวม และงานบิลด์: [Webpack](http://webpack.github.io/docs/what-is-webpack.html)
 
-Webpack takes modules with dependencies and generates static assets representing those modules. It can bundle JavaScript, CSS, HTML or just about anything via additional loaders. Webpack can also be extended via plugins, for example minification and mangling can be done using the UglifyJS plugin for webpack.
+เวบแพ็คจะเอาโมดูลต่างๆ รวมถึงโมดูลที่โมดูลเหล่านั้นต้องใช้งาน แล้วสร้างเป็นไฟล์ออกมาเพื่อเป็นตัวแทนโมดูลเหล่านั้น. มันสามารถมัดรวม จาวาสคริปต์, CSS, HTML หรืออีกหลายๆอย่างได้ โดยใช้โหลดเดอร์์ (loader) เพิ่มเติม. เวบแพ็คยังสามารถเพิ่มความสามารถโดยใช้ปลั๊กอิน (plugins), ยกตัวอย่างเช่น การทำ minification และการทำ mangling สามารถทำได้โดยใช้ปลั๊กอินสำหรับเวบแพ็คที่ชื่อว่า UglifyJS.
 
+Note:
+
+* _minification (มินิฟิเคชั่น) คือการทำให้ไฟล์จาวาสคริปต์มีขนาดเล็กลง_
+* _mangling (แมงค์กลิ้ง) คือการเปลี่ยนชื่อตัวแปรในซอร์สโค้ด_

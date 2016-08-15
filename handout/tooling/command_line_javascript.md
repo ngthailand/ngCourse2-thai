@@ -1,9 +1,8 @@
-# Command Line JavaScript: [NodeJS](http://nodejs.org)
+# สั่งจาวาสคริปต์ด้วยการพิมพ์คำสั่ง: [NodeJS](http://nodejs.org)
 
-NodeJS is an environment that lets you write JavaScript programs that live outside the browser.  It provides:
+NodeJS เป็น environment ที่คุณสามารถเขียนโปรแกรมด้วยจาวาสคริปต์ได้โดยไม่ต้องพึ่งบราวเซอร์ มันมี:
 
-* the V8 JavaScript interpreter
-* modules for doing OS tasks like file I/O, HTTP, etc.
+* ตัวแปลภาษาจาวาสคริปต์ V8 (JavaScript Interpreter)
+* โมดูลที่เอาไว้สำหรับเรียกใช้ Task จากระบบปฎิบัติการ เช่น เรื่องไฟล์ I/O, HTTP, และอื่นๆ
 
-While NodeJS was initially intended for writing server code in JavaScript, today it is widely used by JavaScript tools, which makes it relevant to front-end programmers too. A lot of the tools you'll be using in this code leverage NodeJS.
-
+NodeJS ในตอนแรกตั้งใจจะเอาไว้เขียนโค้ดฝั่งเซิฟเวอร์ด้วยจาวาสคริปต์ แต่ทุกวันนี้มันถูกใช้อย่างแพร่หลายในเครื่องมือจาวาสคริปต์ เลยทำให้มันมาเกี่ยวข้องกับ front-end โปรแกรมเมอร์ด้วย. เครื่องมือหลายๆตัวที่คุณจะได้ใช้ในหลักสูตรนี้ พัฒนาขึ้นมาโดยใช้ NodeJS.

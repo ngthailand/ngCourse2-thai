@@ -1,5 +1,9 @@
-# The JavaScript Toolchain
+# จาวาสคริปต์ Toolchain
 
-In this section, we'll describe the tools that you'll be using for the rest of the course.
+ในบทนี้, พวกเราจะอธิบายถึงเครื่องมือต่างๆที่คุณจะได้ใช้ต่อไปจนจบหลักสูตร
 
-![Hand Tools by M338 is licensed under Public Domain (http://commons.wikimedia.org/wiki/File:Hand_tools.jpg)](../images/tools.jpg)
+![เครื่องมือขนาดเหมาะมือ โดย M388 ลิขสิทธิ์ภายใต้พับบลิคโดเมน (http://commons.wikimedia.org/wiki/File:Hand_tools.jpg)](../images/tools.jpg)
+
+Note:
+
+_ทูลเชน (Toolchain) หมายถึงเครื่องมือหลายๆอย่างที่นำมาใช้ร่วมกันเพื่อพัฒนาฯตั้งแต่ต้นจนออกมาเป็นโปรแกรมที่ใช้งานจริง_

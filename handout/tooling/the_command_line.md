@@ -1,5 +1,5 @@
-# The Command Line
+# การสั่งงานด้วยการพิมพ์คำสั่ง
 
-JavaScript development tools are very command line oriented.  If you come from a Windows background you may find this unfamiliar.  However the command line provides better support for automating development tasks, so it's worth getting comfortable with it.
+เครื่องมือพัฒนาจาวาสคริปต์นั้นเป็นรูปแบบที่ต้องใช้การพิมพ์คำสั่งค่อนข้างมาก. ถ้าคุณใช้ระบบปฎิบัติการวินโดว์มาจนชิน คุณอาจจะรู้สึกว่ามันไม่สะดวกเอาซะเลย. อย่างไรก็ตามการสั่งงานแบบที่ต้องพิมพ์คำสั่งนั้น ทำให้สามารถสั่งให้มันพัฒนางานบางอย่าง หรือบางส่วนให้เป็นแบบอัตโนมัติได้ ดังนั้นคุณควรจะหัดให้เป็นเอาไว้.
 
-We will provide examples for all command line activities required by this course.
+เราจะให้ตัวอย่าง สำหรับคำสั่งทุกคำสั่งที่จำเป็นต้องใช้ในหลักสูตรนี้
