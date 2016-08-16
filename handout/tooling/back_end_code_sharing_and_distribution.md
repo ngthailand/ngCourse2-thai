@@ -1,5 +1,5 @@
-# Back-End Code Sharing and Distribution: [npm](https://www.npmjs.com/)
+# การเผยแพร่ และแบ่งปันซอร์สโค้ดส่วน Back-End: [npm](https://www.npmjs.com/)
 
-`npm` is the "node package manager".  It installs with NodeJS, and gives you access to a wide variety of 3rd-party JavaScript modules.
+`npm` [เอ็นพีเอ็ม] ย่อมาจาก "node package manager". มันถูกติดตั้งพร้อมกับ NodeJS [โหนด-เจเอส], ทำให้เราสามารถค้นหาโมดูลจาวาสคริปต์ได้มากมาย.
 
-It also performs dependency management for your back-end application.  You specify module dependencies in a file called `package.json`; running `npm install` will resolve, download and install your back-end application's dependencies.
+มันยังเป็นตัวจัดการโมดูลที่ต้องใช้งานสำหรับโปรแกรม Back-end [แบ็คเอนด์] ด้วย. คุณกำหนดโมดูลที่ต้องใช้งานในไฟล์หนึ่งไฟล์ที่เรียกว่า `package.json`; สั่งคำสั่ง `npm install` จะทำให้มันค้นหา ดาวโหลด และติดตั้งโมดูลที่ต้องใช้งานในแอพพลิเคชั่น Back-end ให้คุณ.

@@ -1,6 +1,5 @@
-## Chrome
+## บราวเซอร์ Chrome
 
-We use Google's Chrome browser for this course because of its cutting-edge JavaScript engine and excellent debugging tools.
+ในหลักสูตรนี้ พวกเราใช้บราวเซอร์ Chrome ของ Google เพราะมันมี engine จาวาสคริปต์ที่ทันสมัยที่สุด และมีเครื่องมือสำหรับการดีบั๊กที่ยอดเยี่ยม.
 
-However, code written with AngularJS should work on any modern web browser (Firefox, IE9+, Chrome, Safari).
-
+อย่างไรก็ตาม, ซอร์สโค้ดที่ถูกเขียนด้วย AngularJS ควรจะรันได้บนบราวเซอร์ที่ทันสมัยตัวใดก็ได้ (Firefox, IE9 ขึ้นไป,  Chrome, Safari)

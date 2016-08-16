@@ -1,5 +1,9 @@
 # The Command Line
 
-JavaScript development tools are very command line oriented.  If you come from a Windows background you may find this unfamiliar.  However the command line provides better support for automating development tasks, so it's worth getting comfortable with it.
+เครื่องมือพัฒนาจาวาสคริปต์นั้น อยู่ในรูปแบบที่ต้องใช้ command line ค่อนข้างมาก ถ้าคุณใช้ Window (ระบบปฎิบัติการวินโดว์) มาจนชิน คุณอาจจะรู้สึกว่ามันไม่สะดวกเอาซะเลย. อย่างไรก็ตามการใช้งาน command line นั้น ทำให้สามารถสั่งให้มันพัฒนางานบางอย่าง หรือบางส่วนให้เป็นแบบอัตโนมัติได้ ดังนั้นคุณควรจะหัดให้เป็นเอาไว้.
 
-We will provide examples for all command line activities required by this course.
+เราจะให้ตัวอย่าง สำหรับคำสั่งทุกคำสั่งที่จำเป็นต้องใช้ในหลักสูตรนี้
+
+Note:
+
+* _Command line [คอมมานไลน์] การสั่งงานคอมพิวเตอร์ ด้วยการพิมพ์คำสั่ง_
