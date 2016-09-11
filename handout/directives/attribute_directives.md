@@ -1,5 +1,5 @@
-# Attribute Directives
+# ไดเร็กทีฟแบบแอดทริบิวต์ (Attribute directives)
 
-Attribute directives are a way of changing the appearance or behavior of a component. Ideally, a directive should work in a way that is component agnostic and not bound to implementation details.
+ไดเร็กทีฟแบบแอดทริบิวต์เป็นวิธีในการเปลี่ยนการแสดงผล หรือคุณลักษณะของคอมโพเนนท์ในอุดมคติแล้วไดเร็กทีฟควรจะทำงานเป็นอิสระโดยไม่ยึดติดกับคอมโพเนนท์หรือผูกติดกับรายละเอียดในการดำเนินการ
 
-For example, Angular 2 has built-in attribute directives such as `ngClass` and `ngStyle` that work on any component or element.
+ตัวอย่างเช่น, Angular 2 มีไดเร็กทีฟแบบแอดทริบิวต์ติดตั้งมาด้วยอยู่แล้ว คือ `ngClass` และ `ngStyle` ที่สามารถทำงานร่วมกับคอมโพเนนท์หรือเอเลเมนท์ใด ๆ ก็ได้
