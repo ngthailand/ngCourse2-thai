@@ -1,6 +1,6 @@
-# NgStyle Directive
+# ไดเร็กทีฟ NgStyle
 
-Angular 2 provides a built-in directive, `ngStyle`, to modify a component or element's `style` attribute. Here's an example:
+Angular 2 ได้เตรียมไดเร็กทีฟมาให้จำนวนหนึ่ง `ngStyle` เป็นไดเร็กทีฟที่ใช้เพื่อแก้ไขแอดทริบิวต์สไตล์ของคอมโพเนนท์หรือเอเลเมนท์ดังตัวอย่าง:
 
 
 ```typescript
@@ -21,6 +21,6 @@ export class StyleExampleComponent {
   borderStyle: string = '1px solid black';
 }
 ```
-[View Example](https://plnkr.co/edit/rTNmetnnehENXL3Ungch?p=preview)
+[ดูตัวอย่าง](https://plnkr.co/edit/rTNmetnnehENXL3Ungch?p=preview)
 
-Notice that binding a directive works the exact same way as component attribute bindings. Here, we're binding an expression, an object literal, to the `ngStyle` directive so the directive name must be enclosed in square brackets. `ngStyle` accepts an object whose properties and values define that element's style. In this case, we can see that both kebab case and lower camel case can be used when specifying a style property. Also notice that both the html `style` attribute and Angular 2 `ngStyle` directive are combined when styling the element.
+โปรดจำไว้ว่าการผูกของไดเร็กทีฟทำงานแบบเดียวกันกับการผูกแอดทริบิวต์ ของคอมโพเนนท์ดั้งนั้นการผูกนิพจน์ หรืออ็อบเจกต์ ไปยัง `ngStyle` จะต้องหุ้ม `ngStyle` ด้วยวงเล็บ ([]) หลังจากนั้น `ngStyle` จะรับพร็อปเพอร์ตี้และค่าของพร็อปเพอร์ตี้ของอ็อบเจกต์มาแปลงเป็นสไตล์ของเอเลเมนท์จากตัวอย่างแสดงให้เห็นว่าการตั้งชื่อพร็อปเพอร์ตี้สามารถใช้ได้ทั้งในรูปแบบ kebab เช่น `font-weight` และ camel เช่น `borderBottom` โปรดจำไว้เช่นกันว่าแอดทริบิวต์สไตล์และ `ngStyle` ของ Angular 2 จะถูกใช้งานร่วมกันในการตกแต่งเอเลเมนท์

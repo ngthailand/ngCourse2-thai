@@ -1,10 +1,10 @@
-# NgClass Directive
+# ไดเร็กทีฟ NgClass
 
-The `ngClass` directive changes the `class` attribute that is bound to the component or element it's attached to. There are a few different ways of using the directive.
+ไดเร็กทีฟ `ngClass` ทำหน้าที่เปลี่ยนแอดทริบิวต์ class ของคอมโพเนนท์หรือเอเลเมนท์ที่มี `ngClass` อยู่ `ngClass` สามารถนำไปใช้งานได้หลายวิธี
 
-## Binding a string
+## การผูกด้วย string
 
-We can bind a string directly to the attribute. This works just like adding an html `class` attribute.
+เราสามารถผูก string ตรง ๆ ไปยังแอดทริบิวต์ได้ ซึ่งจะทำงานเหมือนกับแอดทริบิวต์ class ปกติ
 
 ```typescript
 @Component({
@@ -32,11 +32,11 @@ export class ClassAsStringComponent {
 }
 ```
 
-[View Example](https://plnkr.co/edit/8M32UVF8BHJDaRMGziFi?p=preview)
+[ดูตัวอย่าง](https://plnkr.co/edit/8M32UVF8BHJDaRMGziFi?p=preview)
 
-In this case, we're binding a string directly so we avoid wrapping the directive in square brackets. Also notice that the `ngClass` works with the `class` attribute to combine the final classes.
+อย่างในกรณีนี้เราทำการผูก string ตรง ๆ จึงควรหลีกเลี่ยงการใช้ [] นอกจากนี้แล้ว `ngClass` ยังสามารถใช้งานร่วมกับแอดทริบิวต์ class ได้ด้วย
 
-## Binding an array
+## การผูกด้วยอาเรย์
 
 ```typescript
 @Component({
@@ -61,13 +61,14 @@ export class ClassAsArrayComponent {
 }
 ```
 
-[View Example](https://plnkr.co/edit/8M32UVF8BHJDaRMGziFi?p=preview)
+[ดูตัวอย่าง](https://plnkr.co/edit/8M32UVF8BHJDaRMGziFi?p=preview)
 
-Here, since we are binding to the `ngClass` directive by using an expression, we need to wrap the directive name in square brackets. Passing in an array is useful want to have a function put together the list of applicable class names.
+การผูกด้วยอาเรย์นอกจากการผูกด้วยนิพจน์แล้วเราจะต้องหุ้มไดเร็กทีฟด้วย [] ด้วยเช่นกัน การผูกแบบนี้จะมีประโยชน์ในกรณีที่ต้องการแปลงค่าจากอาเรย์ที่เปลี่ยนแปลงได้ไปเป็น class
 
-## Binding an object
+## การผูกด้วยอ็อบเจกต์
 
-Lastly, an object can be bound to the directive. Angular 2 applies each property name of that object to the component if that property is true.
+สุดท้ายการผูกด้วยอ็อบเจกต์สามารถทำได้เช่นกัน โดย Angular 2 จะทำการแปลงพร็อปเพอร์ตี้ของอ็อบเจกต์ที่มีค่าเป็น true ไปเป็น class
+
 
 ```typescript
 @Component({
@@ -104,6 +105,6 @@ export class ClassAsObjectComponent {
 }
 ```
 
-[View Example](https://plnkr.co/edit/8mGcM3?p=preview)
+[ดูตัวอย่าง](https://plnkr.co/edit/8mGcM3?p=preview)
 
-Here we can see that since the object's `card` and `flat` properties are true, those classes are applied but since `dark` is false, it's not applied.
+จากตัวอย่างจะเห็นว่าพร็อปเพอร์ตี้ `card` และ `flat` ถูกแปลงเป็น class เนื่องจากมีค่าเป็น true แต่ พร็อปเพอร์ตี้ `dark` ที่มีค่าเป็น false จะไม่ถูกแปลง

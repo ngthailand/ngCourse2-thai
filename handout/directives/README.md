@@ -1,9 +1,9 @@
-# Directives
+# ไดเร็กทีฟ (Directives)
 
-Directives are entities that change the behavior of components or elements and are one of the core building blocks Angular 2 uses to build applications. In fact, Angular 2 components are in large part directives with templates. This is why components are passed in as children through the directives property.
+ไดเร็กทีฟเป็นเอนทิตีที่ใช้ในการเปลี่ยนคุณลักษณะของคอมโพเนนท์หรือเอเลเมนท์และเป็นหนึ่งในหัวใจของ Angular 2 ที่ใช้ในการพัฒนาแอปพลิเคชัน ในความจริงแล้วคอมโพเนนท์ของ Angular 2 เป็นส่วนหนึ่งของไดเร็กทีฟที่มีเทมเพลตเป็นเหตุผลว่าทำไมคอมโพเนนท์จึงถูกส่งเป็น children ผ่านพร็อปเพอร์ตี้ของไดเร็กทีฟ
 
-From an Angular 1 perspective, Angular 2 components have assumed a lot of the roles directives used to. The majority of issues that involve templates and dependency injection rules will be done through components, and issues that involve modifying generic behaviour is done through directives.
+คอมโพเนนท์ของ Angular 2 ได้ทำหน้าที่แทนไดเร็กทีฟของ Angular 1 ในหลายส่วนที่เคยทำ ปัญหาหลักในจัดการกับเทมเพลตและ dependency injection จะถูกจัดการโดยคอมโพเนนท์ส่วนปัญหาในการแก้ไขคุณลักษณะทั่วไปจะจัดการโดยไดเร็กทีฟ
 
-There are two main types of directives in Angular 2:
-* _Attribute directives_ - directives that change the behavior of a component or element but don't affect the template
-* _Structural directives_ - directives that change the behavior of a component or element by affecting how the template is rendered
+ใน Angular 2 มีไดเร็กทีฟหลัก ๆ อยู่ 2 ประเภท:
+* _ไดเร็กทีฟแบบแอดทริบิวต์ (Attribute directives)_ - ไดเร็กทีฟทีแก้ไขคุณลักษณะของคอมโพเนนท์หรือเอเลเมนท์โดยที่ไม่ยุ่งเกี่ยวกับเทมเพลต
+* _ไดเร็กทีฟแบบโครงสร้าง (Structural directives)_ - ไดเร็กทีฟที่แก้ไขคุณลักษณะของคอมโพเนนท์หรือเอเลเมนท์โดยยุ่งเกี่ยวกับวิธีการแสดงผลของเทมเพลต

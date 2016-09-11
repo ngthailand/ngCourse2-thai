@@ -1,6 +1,6 @@
-# NgFor Directive
+# ไดเร็กทีฟ NgFor
 
-The `ngFor` directive is a way of repeating a template by using each item of an iterable as that template's context.
+ไดเร็กทีฟ `ngFor` เป็นวิธีในการวนซ้ำเทมเพลต โดยการใช้แต่ละรายการจากการวนซ้ำเป็นบริบทของเทมเพลต
 
 ```typescript
 @Component({
@@ -25,9 +25,9 @@ export class AppComponent {
   ];
 }
 ```
-[View Example](https://plnkr.co/edit/E2Q8Xi6LATpWcXk6bAUQ?p=preview)
+[ดูตัวอย่าง](https://plnkr.co/edit/E2Q8Xi6LATpWcXk6bAUQ?p=preview)
 
-The `ngFor` directive has a different syntax from other directives we've seen. If you're familiar with the [for...of statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of), you'll notice that they're almost identical. `ngFor` lets you specify an iterable object to iterate over and the name to refer to each item by inside the scope. In our example, you can see that `episode` is available for interpolation as well as attribute binding. The directive does some extra parsing so that when this is expanded to template form, it looks a bit different:
+ไดเร็กทีฟ `ngFor` มีรูปแบบแตกต่างจากไดเร็กทีฟอื่น ๆ ที่เราเคยเห็นมา หากคุณคุ้นเคยกับ [for..of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of) คุณจะพบว่าทั้งสองมีความคล้ายคลึงกัน `ngFor` อนุญาตให้คุณกำหนดอ็อบเจกต์ที่จะได้จากการวนซ้ำ และชื่อที่อ้างอิงถึงแต่ละรายการภายในขอบข่ายในตัวอย่างของเรา คุณสามารถเห็นได้ว่า `episode` สามารถใช้สำหรับการสอดแทรกได้เช่นเดียวกับการผูกสัมพันธ์แอดทริบิวต์ ไดเร็กทีฟดังกล่าวได้ถูกทำการแจงเพิ่มเติม ดังนั้นเมื่อสิ่งนี้ถูกส่งต่อไปยังเทมเพลตจะส่งผลแตกต่างกันเล็กน้อย:
 
 
 ```typescript
@@ -43,15 +43,15 @@ The `ngFor` directive has a different syntax from other directives we've seen. I
   `
 })
 ```
-[View Example](https://plnkr.co/edit/E2Q8Xi6LATpWcXk6bAUQ?p=preview)
+[ดูตัวอย่าง](https://plnkr.co/edit/E2Q8Xi6LATpWcXk6bAUQ?p=preview)
 
-Notice that there is an odd `let-episode` property on the template element. The `ngFor` directive provides some variables as context within its scope. `let-episode` is a context binding and here it takes on the value of each item of the iterable. `ngFor` also provides some other values that can be bound to:
+สังเกตุว่ามีสิ่งแปลกปลอมอยู่หนึ่งอย่างนั่นคือพร็อปเพอร์ตี้ `let-episode` ที่อยู่บนเอเลเมนท์เทมเพลต ไดเร็กทีฟ `ngFor` ได้จัดเตรียมตัวแปรบางตัวมาเป็นบริบทภายในขอบข่าย `let-episode` เป็นการผูกสัมพันธ์กับบริบทและในที่นี้มันได้หยิบแต่ละรายการของการวนซ้ำมา `ngFor` ยังคงเตรียมตัวแปรอื่น ๆ ที่สามารถถูกผูกได้ดังนี้:
 
-- _index_ - position of the current item in the iterable starting at `0`
-- _first_ - `true` if the current item is the first item in the iterable
-- _last_ - `true` if the current item is the last item in the iterable
-- _even_ - `true` if the current index is an even number
-- _odd_ - `true` if the current index is an odd number
+- _index_ - ตำแหน่งของรายการปัจจุบันในแต่ละการวนซ้ำ เริ่มต้นที่ `0`
+- _first_ - มีค่าเป็น `true` หากเป็นรายการแรกของการวนซ้ำ
+- _last_ - มีค่าเป็น `true` หากเป็นการการสุดท้ายของการวนซ้ำ
+- _even_ - มีค่าเป็น `true` หาก `index` เป็นเลขคู่
+- _odd_ - มีค่าเป็น `true` หาก `index` เป็นเลขคี่
 
 
 ```typescript
@@ -78,15 +78,15 @@ Notice that there is an odd `let-episode` property on the template element. The 
   `
 })
 ```
-[View Example](https://plnkr.co/edit/GaxhVSjfY8UmHm4T3PNg?p=preview)
+[ดูตัวอย่าง](https://plnkr.co/edit/GaxhVSjfY8UmHm4T3PNg?p=preview)
 
 ## trackBy ##
 
-Often `ngFor` is used to iterate through a list of objects with a unique ID field. In this case, we can provie a `trackBy` function which helps Angular keep track of items in the list so that it can detect which items have been added or removed and improve performance.
+บ่อยครั้งที่ `ngFor` ถูกใช้เพื่อวนซ้ำแต่ละรายการจากรายการของอ็อบเจกต์ด้วยฟิลด์ ID ที่เป็นเอกลักษณ์ แต่ในเคสนี้ เราสามารถใช้ฟังก์ชัน `trackBy` ที่ช่วยให้ Angular สามารถติดตามรายการต่าง ๆ ภายในรายการได้ ดังนั้นแล้วมันสามารถตรวจพบรายการที่ถูกเพิ่มหรือถอนได้และช่วยเพิ่มประสิทธิภาพอีกด้วย
 
-Angular 2 will try and track objects by reference to determine which items should be created and destroyed. However, if you replace the list with a new source of objects, perhaps as a result of an API request - we can get some extra performance by telling Angular 2 how we want to keep track of things.
+Angular 2 จะพยายามที่จะติดตามอ็อบเจกต์จากการอ้างอิงเพื่อกำหนดว่ารายการไหนควรจะถูกสร้างหรือทำลาย อย่างไรก็ตามหากคุณได้แทนที่รายการเดิมด้วยรายการจากแหล่งใหม่ บางครั้งเป็นผลลัพธ์ของการร้องขอจาก API เราสามารถที่จะเพิ่มประสิทธิภาพได้โดยการบอก Angular 2 ว่าเราควรจะอ้างอิงรายแต่ละรายการอย่างไร
 
-For example, if the `Add Episode` button was to make a request and return a new list of episodes, we might not want to destroy and re-create every item in the list. If the episodes have a unique ID, we could add a `trackBy` function:
+ดังตัวอย่าง ถ้าปุ่ม `Add Episode` เป็นการร้องขอรายการของ `episodes` ชุดใหม่ เราอาจะไม่ต้องการทำลายทุก ๆ รายการในรายการแล้วจึงสร้างทั้งหมดขึ้นมาใหม่ ถ้าแต่ละ `episode` มี ID ที่เป็นเอกลักษณ์อยู่แล้ว เราสามารถเพิ่มฟังก์ชัน `trackBy` ได้:
 
 ```typescript
 @Component({
@@ -135,7 +135,7 @@ export class AppComponent {
 }
 ```
 
-To see how this can affect how the `ForExample` component, lets add some logging to it.
+เพื่่อจะรู้ว่ามันส่งผลกระทบต่อวิธีการสร้างคอมโพเนนต์ `ForExample` อย่างไร เรามาลองเพิ่มการล็อกดู
 
 ```typescript
 export class ForExampleComponent {
@@ -149,10 +149,10 @@ export class ForExampleComponent {
   }
 }
 ```
-[View Example](https://plnkr.co/edit/bjqil7?p=preview)
+[ดูตัวอย่าง](https://plnkr.co/edit/bjqil7?p=preview)
 
-When we view the example, as we click on `Add Episode`, we can see console output indicating that only one component was created - for the newly added item to the list.
+เมื่อเราได้เห็นตัวอย่างดังกล่าว เราคลิกบนปุ่ม `Add Episode` เราเห็นได้ว่าผลลัพธ์ในคอนโซลแสดงให้เห็นว่ามีแค่คอมโพเนนต์เดียวเท่านั้นที่ถูกสร้างใหม่
 
-However, if we were to remove the `trackBy` from the `*ngFor` - every time we click the button, we would see the items in the component getting destroyed and recreated.  
+หากเราลองลบ `trackBy` ออกจาก `*ngFor` ทุกครั้งที่เรากดปุ่ม เราจะเห็นทุก ๆ ไอเท็มในรายการถูกทำลายและสร้างใหม่  
 
-[View Example Without trackBy](https://plnkr.co/edit/CbPDig?p=preview)
+[ดูตัวอย่างที่ไม่มี trackBy](https://plnkr.co/edit/CbPDig?p=preview)

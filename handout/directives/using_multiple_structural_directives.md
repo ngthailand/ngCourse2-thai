@@ -1,6 +1,6 @@
-# Using Multiple Structural Directives
+# การใช้งานไดเร็กทีฟแบบโครงสร้างหลายอันร่วมกัน
 
-Sometimes we'll want to combine multiple structural directives together, like iterating using `ngFor` but wanting to do an `ngIf` to make sure that the value matches some or multiple conditions. Combining structural directives can lead to unexpected results however, so Angular 2 requires that a template can only be bound to one directive at a time. To apply multiple directives we'll have to expand the sugared syntax or nest template tags.
+บางครั้งเราต้องการจะใช้ไดเร็กทีฟแบบโครงสร้างหลาย ๆ อันร่วมกัน เช่น การทำซ้ำด้วย `ngFor` แต่ต้องการเชคเงื่อนไขด้วย `ngIf` ว่าตรงกับเงื่อนไขที่กำหนดไว้หรือไม่ การใช้งานไดเร็กทีฟแบบโครงสร้างหลายอันร่วมกันสามารถสร้างผลลัพธ์ที่ไม่คาดคิดได้ อย่างไรก็ตาม Angular 2 ต้องการให้เทมเพลตสามารถผูกติดกับไดเร็กทีฟแค่อันเดียวเท่านั้น การที่จะใช้หลายไดเร็กทีฟเราจำเป็นจะต้องขยายซินแท็ก sugar หรือใช้แท็กเทมเพลตซ้อนกัน
 
 
 ```typescript
@@ -15,4 +15,4 @@ Sometimes we'll want to combine multiple structural directives together, like it
   `
 })
 ```
-[View Example](https://plnkr.co/edit/3bJVnCs6n9HwA3GCh7IE?p=preview)
+[ดูตัวอย่าง](https://plnkr.co/edit/3bJVnCs6n9HwA3GCh7IE?p=preview)

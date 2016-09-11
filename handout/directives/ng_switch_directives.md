@@ -1,6 +1,6 @@
-# NgSwitch Directives
+# ไดเร็กทีฟ NgSwitch
 
-`ngSwitch` is actually comprised of two directives, an attribute directive and a structural directive. It's very similar to a [switch statement](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/switch) in JavaScript and other programming languages, but in the template.
+จริง ๆ แล้ว `ngSwitch` ประกอบด้วยไดเร็กทีฟ 2 ประเภท คือไดเร็กทีฟแบบแอดทริบิวต์และ ไดเร็กทีฟแบบโครงสร้าง `ngSwitch` มีความคล้ายคลึงกับ [switch statement](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/switch) ในภาษาจาวาสคริปต์และภาษาโปรแกรมอื่น ๆ แต่เป็นในรูปแบบเทมเพลต
 
 ```typescript
 @Component({
@@ -31,6 +31,8 @@ export class AppComponent {
   }
 }
 ```
-[View Example](https://plnkr.co/edit/n3jhb6BnRuU17uxIYfMT?p=preview)
+[ดูตัวอย่าง](https://plnkr.co/edit/n3jhb6BnRuU17uxIYfMT?p=preview)
 
-Here we see the `ngSwitch` attribute directive being attached to an element. This expression bound to the directive defines what will compared against in the switch structural directives. If an expression bound to `ngSwitchCase` matches the one given to `ngSwitch`, those components are created and the others destroyed. If none of the cases match, then components that have `ngSwitchDefault` bound to them will be created and the others destroyed. Note that multiple components can be matched using `ngSwitchCase` and in those cases all matching components will be created. Since components are created or destroyed be aware of the costs in doing so.
+ในที่นี้เราจะเห็นไดเร็กทีฟ `ngSwitch` ติดกับเอเลเมนท์ นิพจน์ดังกล่าวจะผูกกับข้อกำหนดของไดเร็กทีฟที่จะถูกนำไปเปรียบเทียบต่อในไดเร็กทีฟแบบโครงสร้างกรณีที่นิพจน์ใน `ngSwitchCase` ของคอมโพเนนท์ใดเข้าคู่กับที่ส่งไปใน `ngSwitch` คอมโพเนนท์นั้นจะถูกสร้างและคอมโพเนนท์อื่นจะถูกทำลาย ถ้าหากไม่มีเคสใด ๆ เข้าคู่คอมโพเนนท์ที่ผูกกับ `ngSwitchDefault` จะถูกสร้างขึ้นและคอมโพเนนท์อื่นจะถูกทำลาย
+
+ควรทราบไว้ว่าคอมโพเนนท์หลาย ๆ อันสามารถที่จะเข้าคู่พร้อมกันได้ผ่านการใช้ `ngSwitchCase` และคอมโพเนนท์ดังกล่าวจะถูกสร้างขึ้นทั้งหมด เนื่องจากคอมโพเนนท์จะถูกสร้างและทำลายควรระมัดระวังถึงความสิ้นเปลืองในการใช้งาน
